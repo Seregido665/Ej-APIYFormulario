@@ -1,0 +1,36 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 38px;
+  max-width: 1480px;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.cards {
+  background-color: #e9e9e9;
+  transition: transform 0.2s;
+  padding: 15px 20px; /* suficiente espacio interno */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(114, 114, 114, 0.8);
+  gap: 2rem;
+}
+
+.cards:hover {
+  transform: scale(1.07);
+}
+
+.cards img {
+  width: 110px;   /* tamaño más pequeño que antes */
+  height: 110px;
+  margin-bottom: 12px;
+}
+
+.titulo {
+  font-style: italic;
+  text-decoration: underline;
+  padding: 25px;
+}
+

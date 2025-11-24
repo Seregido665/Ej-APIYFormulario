@@ -1,0 +1,67 @@
+.contact-page {
+    min-height: 100vh;
+}
+.users-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: start; 
+    padding: 40px;
+    min-height: 100vh; 
+}
+
+/* Mensaje cuando no hay usuarios */
+.no-users-message {
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0;
+}
+
+
+
+/* Estilo para el contenedor de la tarjeta de usuario */
+.user-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Puedes ajustar el tamaño */
+    text-align: center;
+    transition: all 0.3s ease; /* Para el efecto hover */
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+/* Estilo de la imagen */
+.user-card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los párrafos dentro de la tarjeta */
+.user-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.buttonDel {
+    background-color: rgba(255, 0, 0, 0.527);
+    padding: 1px 8px;
+    margin-top: 10px;
+    color: rgb(34, 34, 34);
+    border-radius: 500px;
+}
+
+

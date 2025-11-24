@@ -1,0 +1,34 @@
+.card {
+  background-color: #e9e9e9;
+  transition: transform 0.2s;        /* Espacio interno */
+  border-radius: 10px;          /* Bordes redondeados */
+  max-width:400px;             /* No se estira demasiado */
+  margin: 20px auto;    
+  box-shadow: 0 4px 8px rgba(114, 114, 114, 0.829); /* Sombra suave */
+        /* Centra horizontalmente */
+}
+
+
+.card img {
+  width: 185px;                 /* Tamaño de imagen */
+  height: 185px;
+          /* Espacio debajo de la imagen */
+}
+
+.nombre {
+  font-weight: bold;            /* Mantener bold del nombre */
+  font-size: 19px;              /* Texto un poco más grande */
+  margin-bottom: 20px;
+}
+
+.pokemon-info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.pokemon-info p {
+  margin: 5px 0;  
+  display:block      
+}
+

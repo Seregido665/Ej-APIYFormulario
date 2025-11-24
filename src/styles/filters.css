@@ -1,0 +1,52 @@
+
+.dropdown {
+  position: relative;        /* ← Necesario para que el ul absolute se posicione respecto a este div */
+  display: inline-block;
+  z-index: 1000;
+}
+.dropdown-toggle {
+  padding: 5px 20px;
+  margin: 15px 35px 0px;
+  background: #333333d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+ul {
+  position: absolute;        /* ← Aquí está la clave: sale del flujo normal */
+  top: 100%;                 /* justo debajo del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  min-width: 170px;          /* opcional, por si tenías algo antes */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* corregido, antes tenías solo color */
+  border-radius: 2px;
+  margin-top: 3px;
+  padding: 8px 0;
+  list-style: none;
+}
+
+
+
+span {
+  display: block;
+  padding: 5px;
+  color: #333;
+}
+span:hover {
+  background: #c2c2c248;
+}
+
+
+
+.selected {
+    background: #007bff56;
+    font-weight: bold;
+}
+
+
+
