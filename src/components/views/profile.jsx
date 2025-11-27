@@ -96,7 +96,7 @@ const Profile = () => {
                     text="Nuevo usuario"
                 />
                 <div className="profile-container">
-                    <h5 className="profile-title">Rellena el siguiente formulario.</h5>
+                    <h4 className="profile-title">Rellena el siguiente formulario.</h4>
                     <form 
                         className="profile-form"
                         onSubmit={handleForm}

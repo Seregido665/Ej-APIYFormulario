@@ -20,35 +20,85 @@ const Details = () => {
 
 
     return (
-        <div>
+        <div className="details-container">
             <div className="menuTop">
                 <Navbar 
                     type="navbar botones"
                     text="Detalles"
                 />
+                
+                <div className="pokemon-detail-card mt-5">
+                    <div>
+                        <div>
+                            <h4>#{pokemon.id.toString().padStart(3, '0')}</h4>
+                            <h1>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1>
+                        </div>
+                        <div className="pokemon-image-container">
+                            <div className="pokemon-image-wrapper">
+                                <img 
+                                    src={pokemon.sprites.front_default} 
+                                    className="pokemon-image"
+                                />
+                            </div>
+                        </div>
+                        <div className="pokemon-types">
+                            {pokemon.types.map((type) => (
+                                <h1 className={`type-badge type-${type.type.name}`}>
+                                    {type.type.name.toUpperCase()}
+                                </h1>
+                            ))}
+                        </div>
+                    </div>
 
-                <div className="card">
-                    <Carta 
-                        type="detail" 
-                        text={`${pokemon.id} - ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}`}   // id + Nombre
-                        img={pokemon.sprites.front_default}
-                    />
-                </div>
-                <div className="pokemon-info">
-                    <p><strong>HP:</strong> {pokemon.stats[0].base_stat}</p>
-                    <p><strong>Ataque:</strong> {pokemon.stats[1].base_stat}</p>
-                    <p><strong>Defensa:</strong> {pokemon.stats[2].base_stat}</p>
-                    <p><strong>Tipo:</strong> {
-                        pokemon.types
-                        .map(type => type.type.name.toUpperCase())  // .map PORQUE PUEDE HABER MAS DE 1 UN TIPO
-                        .join(", ")
-                    }
-                    </p>
-                    <p><strong>Altura:</strong> {pokemon.height / 10} m</p>
-                    <p><strong>Peso:</strong> {pokemon.weight / 10} kg</p>
+                    <div className="stats-column">
+                        <div className="stat-item">
+                            <div className="stat-label">
+                                HP
+                            </div>
+                            <div>
+                                <span className="stat-value">{pokemon.stats[0].base_stat}</span>
+                                <div style={{ width: `${(pokemon.stats[0].base_stat / 255) * 100}%` }}></div>
+                            </div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-label">
+                                ATK
+                            </div>
+                            <div>
+                                <span className="stat-value">{pokemon.stats[1].base_stat}</span>
+                                <div style={{ width: `${(pokemon.stats[1].base_stat / 255) * 100}%` }}></div>
+                            </div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-label">
+                                DEF
+                            </div>
+                            <div>
+                                <span className="stat-value">{pokemon.stats[2].base_stat}</span>
+                                <div style={{ width: `${(pokemon.stats[2].base_stat / 255) * 100}%` }}></div>
+                            </div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-label">
+                                Altura
+                            </div>
+                            <div>
+                                <span className="stat-value">{pokemon.height / 10} m</span>
+                            </div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-label">
+                                Peso
+                            </div>
+                            <div>
+                                <span className="stat-value">{pokemon.weight / 10} kg</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
 export default Details;
