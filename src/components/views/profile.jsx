@@ -57,6 +57,17 @@ const Profile = () => {
     // --- FUNCION PRINCIPAL DEL FORMULARIO ---> Date.now() PARA EL id
     const handleForm = (e) => {
         e.preventDefault();
+
+        // -- VALIDACIONES --
+            if (!formData.name.trim() || !formData.email.trim() || !formData.number.trim() || !formData.password.trim()) {
+                alert("Completa todos los campos ¡por favor!");
+                return;
+            }
+            if (formData.password !== formData.confirmPassword) {
+                alert("Las contraseñas no coinciden.");
+                return;
+            }
+
         const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios") || "[]");
             // EN EL localStorage ESTAN LOS USUARIOS ACTUALES,
             // NOS LOS GUARDAMOS.
