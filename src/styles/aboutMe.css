@@ -32,12 +32,8 @@
 
 
 
-.link-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.link {
+
+.link1 {
     display: inline-block;
     padding: 2px 80px;
     background: linear-gradient(135deg, #99ff95 0%, #45db00 100%);
@@ -48,6 +44,19 @@
     font-size: 1.3rem;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.575);
+}
+.link2 {
+    display: inline-block;
+    padding: 2px 80px;
+    background: linear-gradient(135deg, #95fff6 0%, #00dbb7 100%);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.575);
+    margin: 15px;
 }
 .link:hover {
     transform: translateY(-4px);

@@ -29,7 +29,7 @@ const Details = () => {
                 <div className="mt-4">
                     <div>
                         <h3>#{pokemon.id.toString().padStart(3, '0')} - {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h3>      {/*PARA QUE LOS NUMEROS SE VEAN 007 por ejemplo*/}
-             
+            
                     </div>
                     <div className="pokemon-image-container">
                         <div className="pokemon-image-wrapper">

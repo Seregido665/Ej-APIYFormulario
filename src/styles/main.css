@@ -22,7 +22,7 @@
 .cards {
   background-color: #ffffff;
   transition: transform 0.7s;
-  padding: 15px 5px; /* suficiente espacio interno */
+  padding: 15px 5px; 
   border-radius: 12px;
   width: 200px;
   box-shadow: 0 4px 8px rgba(114, 114, 114, 0.8);
@@ -34,8 +34,8 @@
 }
 
 .cards img {
-  width: 110px;   /* tamaño más pequeño que antes */
-  height: 110px;
+  width: 130px;   
+  height: 130px;
   margin-bottom: 12px;
 }
 

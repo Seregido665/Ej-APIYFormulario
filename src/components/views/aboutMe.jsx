@@ -32,15 +32,20 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="link-container">
-                    <a href="https://www.artstation.com/sergioluque" target="_blank" className="link">
+                <div className="pb-3">
+                    <a href="https://www.artstation.com/sergioluque" target="_blank" className="link1">
                         Portfolio de ARTE
                     </a>
                 </div>
 
                 <div className="about-text2">
-                    <h2>A hacer una web para aprender ajedrez por mi TFG:</h2>
-                    <h3>(En camino...)</h3>
+                    <h2>A hacer una web para aprender ajedrez por TFG:</h2>
+                    <div>
+                    <a href="https://github.com/Seregido665/ChessTeacher-Proyect" target="_blank" className="link2">
+                        Repositorio GitHub
+                    </a>
+                </div>
+                    <h4>(En proceso...)</h4>
                 </div>
 
                 {/* Nueva estructura de 3 divs principales */}
